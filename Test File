@@ -50,3 +50,29 @@ while true do
 end
 
 print("The total is: " .. total)
+
+-- #4
+
+math.randomseed(os.time())
+
+while true do
+    print("Enter a maximum number:")
+    local maxInput = io.read()
+    local maxNumber = tonumber(maxInput)
+
+    if maxNumber == nil or maxNumber < 0 then
+        print("Please enter a valid positive number.")
+    else
+        local randomNumber = math.random(0, maxNumber)
+        print("Random number: " .. randomNumber)
+    end
+
+    print("Play again? (yes/no)")
+    local answer = io.read()
+
+    if answer ~= "yes" then
+        break
+    end
+end
+
+print("Goodbye!")
