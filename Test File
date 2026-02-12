@@ -1,0 +1,5 @@
+print("Please type in something!")
+local input = io.read()
+print(string.upper(input))
+
+
