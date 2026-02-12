@@ -1,7 +1,11 @@
+-- #1
+
 print("Please type in something!")
 local input = io.read()
 print(string.upper(input))
 
+
+-- #2
 
 print ("Enter the first Numebr")
 num1 = tonumber (io.read ())
@@ -21,3 +25,28 @@ end
 
 total = num1 + num2
 print("The total is " .. total)
+
+-- #3
+
+local total = 0
+
+print("Enter numbers to add together.")
+print("Type 'done' when you are finished.")
+
+while true do
+    local input = io.read()
+
+    if input == "done" then
+        break
+    end
+
+    local number = tonumber(input)
+
+    if number ~= nil then
+        total = total + number
+    else
+        print("Please enter a valid number.")
+    end
+end
+
+print("The total is: " .. total)
