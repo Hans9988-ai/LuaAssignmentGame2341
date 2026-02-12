@@ -3,3 +3,21 @@ local input = io.read()
 print(string.upper(input))
 
 
+print ("Enter the first Numebr")
+num1 = tonumber (io.read ())
+
+while num1 == nil do
+    print ("That's not a number, try agian!")
+    num1 = tonumber (io.read())
+end
+
+print("Enter the secon number")
+num2 = tonumber(io.read())
+
+while num2 == nil do
+    print (That's not a number, try again!")
+    num2 = tonumber (io.read())
+end
+
+total = num1 + num2
+print("The total is " .. total)
